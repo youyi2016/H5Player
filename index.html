@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/h5player.css" />
+		
+	 <style type="text/css">	
+	 .h5player {
+	    max-width: 40rem;
+	    margin-left: auto;
+	    margin-right: auto;
+	   /* margin-bottom: 50px;*/
+	 }    
+	</style>
+	</head>
+	
+	<body>
+	
+		<div class="h5player">
+			
+		<div class="h5player-video-wrap">
+		<video id="player" class="h5player-video">
+		  <source src="1.mp4" type="video/mp4">
+		  <source src="3.webm" type="video/webm"> 
+		  <source src="2.ogg" type="video/ogg">
+		            您的浏览器不支持Video标签。
+        </video>
+        </div>
+        
+        <div class="h5player-loading-wrap">
+        	<span class="h5player-loading-text ">正在加载...</span>
+        	<span class="h5player-error-text h5player-error-show">网络异常，加载失败</span>
+        	
+        </div>
+        
+        <!--弹幕-->
+        <div class="h5player-danmuku-wrap">
+       	  <div class="h5player-danmu-move">
+       	  	<div>黄轩黄轩黄轩</div>
+       	  	<div>黄轩黄轩黄轩啊啊啊啊啊啊啊啊</div>
+       	  	<div>永远支持黄轩</div>
+       	  	<div>黄轩好帅</div>
+       	  	<div>233333333333333</div>
+       	  	<div>666666666666666</div>
+       	  	<div>表白黄轩2333333</div>
+       	  	<div>黄轩最帅2333333</div>
+       	  	<div>翻译官2333333</div>
+       	  	<div>米月专2333333</div>
+       	  </div>
+        </div>
+        
+       <!--控件部分-->
+       <div class="h5player-controller">   	
+       	 
+       	 <div class="h5player-icons h5player-icons-left">
+       	 <div class="h5player-icon h5player-play-icon h5player-icon-play"> </div>
+       	 <div class="h5player-volume" >
+       	 	<div class="h5player-icon h5player-volume-icon h5player-icon-volume-low">
+       	 	</div>
+      
+       	 	<div class="h5player-volume-bar">
+       	 		<div class="h5player-volume-loaded" style="width: 0; background: #0ff">
+       	 			<span class="h5player-volume-thumb" style="background: #0ff"></span>
+       	 		</div>           
+           </div>
+            
+       	  </div>
+       	 <span class="h5player-time"><span class="h5player-curtime">00:00</span>/<span class="h5player-alltime">00:00</span></span>    	 
+       	 </div>
+       	 
+       	 <div class="h5player-icons h5player-icons-right">
+       	 	 <div class="h5player-comment">
+       	 	 	 <div class="h5player-icon h5player-comment-icon h5player-icon-flickr">
+       	 	 	 </div>
+       	 	 </div>
+       	 	 
+       	 	 <div class="h5player-setting">
+       	 	 	<div class="h5player-icon h5player-setting-icon h5player-icon-cog"></div>
+       	 	 </div>
+       	 	 
+       	 	 <div class="h5player-full">
+       	 	 	<div class="h5player-icon h5player-full-icon h5player-icon-enlarge"></div>
+       	 	 </div>
+       	 	 
+       	 	 <div class="h5player-input-wrap">
+       	     <input type="text" placeholder="我要评论" class="h5player-input-comment">
+             </div>
+       	 	 
+       	 </div>
+       </div>
+       
+       <div class="h5player-bar-wrap">
+       <div class="h5player-bar">
+       	    <div class="h5player-loaded" style="width: 0;"></div>
+            <div class="h5player-played" style="width: 0; background: #0ff;">
+                <span class="h5player-thumb" style="background: #0ff"></span>
+            </div>
+       </div>
+       </div>
+      </div>
+       <!--控件部分结束-->      
+       </div>
+       <script src="js/h5player.js" ></script>
+	</body>
+</html>

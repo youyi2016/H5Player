@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?xcmcpu');
+  src:  url('../fonts/icomoon.eot?xcmcpu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xcmcpu') format('truetype'),
+    url('../fonts/icomoon.woff?xcmcpu') format('woff'),
+    url('../fonts/icomoon.svg?xcmcpu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="h5player-icon-"], [class*=" h5player-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h5player-icon-spinner:before {
+  content: "\e97f";
+}
+.h5player-icon-enlarge:before {
+  content: "\e989";
+}
+.h5player-icon-cog:before {
+  content: "\e994";
+}
+.h5player-icon-menu:before {
+  content: "\e9bd";
+}
+.h5player-icon-play:before {
+  content: "\ea1c";
+}
+.h5player-icon-pause:before {
+  content: "\ea1d";
+}
+.h5player-icon-backward:before {
+  content: "\ea1f";
+}
+.h5player-icon-forward:before {
+  content: "\ea20";
+}
+.h5player-icon-volume-medium:before {
+  content: "\ea27";
+}
+.h5player-icon-volume-low:before {
+  content: "\ea28";
+}
+.h5player-icon-volume-mute:before {
+  content: "\ea2a";
+}
+.h5player-icon-flickr:before {
+  content: "\eaa3";
+}
+
+.h5player {
+	position: relative;
+}
+
+:-webkit-full-screen #player {
+  width: 100%;
+  height: 100%;
+}
+
+ .h5player-video-wrap {
+    position: relative;
+    background: #000;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ .h5player-video {
+    width: 100%;
+    height: 100%;
+  
+}
+
+.h5player-controller {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 40px;
+	padding: 0 20px;
+     /*user-select: none;*/
+}
+
+.h5player-icons {
+	position: absolute;
+	height: 38px;
+	bottom: 0;
+}
+
+.h5player-icon {
+	cursor: pointer;
+	opacity: .8;
+	transition: all .2s ease-in-out;
+	vertical-align: middle;  
+	display: inline-block;
+	color: #fff;
+	padding: 10px;  
+}
+
+ .h5player-icons-right {
+ 	bottom: -1px;
+	right: 20px;
+}
+
+.h5player-time {
+	  line-height: 38px;
+    color: #eee;
+    /*text-shadow: 0 0 2px rgba(0,0,0,.5);*/
+    vertical-align: middle;
+    font-size: 13px;
+    cursor: default;
+}
+
+.h5player-volume,
+.h5player-comment,
+.h5player-setting,
+.h5player-full {
+	 display: inline-block;
+	 height: 100%;
+}
+
+.h5player-bar-wrap {
+	  padding: 5px 0;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    bottom: 33px;
+    width: calc(100% - 40px);
+    height: 3px;
+}
+
+.h5player-bar {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background: rgba(255, 255, 255, .2);
+}
+
+.h5player-loaded {
+	  position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .4);
+    height: 3px;
+    transition: all 0.5s ease;
+    width: 20px;
+}
+
+.h5player-played {
+	position: absolute;
+  width: 100%;
+	height: 3px;
+}
+
+.h5player-thumb {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -4px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	transition: all .3s ease-in-out;
+}
+
+.h5player-volume-bar-wrap {
+	height: 100%;
+	display: none;
+}
+
+.h5player-volume-bar {
+	/*display: inline-block;*/
+	position: relative;
+	width: 40px;
+	height: 3px;
+	left: -15px;
+	vertical-align: middle;
+/*	visibility: hidden;*/
+	background: rgba(255, 255, 255, .2); 
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	display: none;
+}
+
+.h5player-volume-loaded {
+		position: absolute;
+		height: 3px;
+/*		transition: all .1s ease;*/
+}
+
+.h5player-volume-thumb {
+	position: absolute;
+	top: -4px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+/*	 transition: all .3s ease-in-out;*/
+}
+
+.h5player-input-wrap {
+  display: block;
+	position: absolute;
+	top: -40px;
+	right: 20px;
+	transform: scale(0);
+	transition: transform .3s ease-out;
+}
+
+.h5player-input-comment-open {
+	transform: scale(1);
+}
+
+.h5player-input-comment {
+	width: 10rem;
+	height: 1.5rem;
+	transition: width .3s ease-in-out;
+	/*border-radius: 2px;*/
+}
+
+.h5player-input-comment:hover {
+	width: 12rem;
+}
+ 
+.h5player-danmuku-wrap,
+.h5player-loading-wrap {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 overflow: hidden;
+	 /*background: #000;*/
+}
+
+.h5player-danmuku {
+	
+}
+
+.h5player-danmu-move {
+	position: absolute;
+	margin-left: 100%;
+	/*width: 100%;*/
+	animation-duration: 15s;
+	animation-name: danmumove;
+	color: #fff;
+}
+
+/*@-moz-keyframes danmumove{
+	from{}
+	to{}
+}
+
+@-webkit-keyframes name{
+	from{}
+	to{}
+}*/
+
+@keyframes danmumove {
+	from {
+		margin-left: 100%;
+	}
+	
+	to {
+		margin-left: -100%;
+	}
+}
+
+.h5player-isloading-show,
+.h5player-error-show {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #eee;
+}
+
+.h5player-loading-text,
+.h5player-error-text {
+	display: none;
+	/*visibility: hidden;*/
+}
